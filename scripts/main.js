@@ -18,7 +18,7 @@ var startInterval = function() {
 
   setInterval(function(){
     deck.next();
-    document.getElementById('timer').innerHTML = -1;
+    document.getElementById('timer').innerHTML = 0;
   }, 1000 * 20)
 
   var counter = setInterval(function(){
