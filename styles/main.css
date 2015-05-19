@@ -345,6 +345,13 @@ a.black {
   width: 70px;
   height: 70px;
 }
+#timer {
+  position: fixed;
+  right: 0;
+  top: -4px;
+  font-size: 26px;
+  color: #888;
+}
 .logo {
   background-position: center;
   background-repeat: no-repeat;
@@ -361,6 +368,16 @@ a.black {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.btn {
+  padding: 10px 25px;
+  background: #00f3a5;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: normal;
+  font-family: Source Sans Pro, helvetica, arial, sans-serif;
+  border: 0;
+  cursor: pointer;
 }
 .gif {
   -webkit-background-size: cover;
@@ -380,78 +397,33 @@ a.black {
   background: rgba(0,0,0,0.6);
   z-index: -1;
 }
-.gif--more-planning {
-  background-image: url("../images/moreplanning.gif");
+.gif--1 {
+  background-image: url("../images/1.gif");
 }
-.gif--war {
-  background-image: url("../images/war.gif");
+.gif--2 {
+  background-image: url("../images/2.gif");
 }
-.gif--prepare {
-  background-image: url("../images/prepare.gif");
+.gif--3 {
+  background-image: url("../images/3.gif");
 }
-.gif--strategy {
-  background-image: url("../images/strategy.gif");
+.gif--4 {
+  background-image: url("../images/4.gif");
 }
-.gif--low {
-  background-image: url("../images/low.gif");
+.gif--5 {
+  background-image: url("../images/5.gif");
 }
-.gif--eye {
-  background-image: url("../images/eye.gif");
+.gif--6 {
+  background-image: url("../images/6.gif");
 }
-.gif--away {
-  background-image: url("../images/away.gif");
+.gif--7 {
+  background-image: url("../images/7.gif");
 }
-.gif--hold {
-  background-image: url("../images/hold.gif");
+.gif--8 {
+  background-image: url("../images/8.gif");
 }
-.gif--fidgeting {
-  background-image: url("../images/fidgeting.gif");
+.gif--9 {
+  background-image: url("../images/9.gif");
 }
-.gif--touch {
-  background-image: url("../images/touch.gif");
-}
-.gif--planning {
-  background-image: url("../images/plan.jpg");
-}
-.gif--defence {
-  background-image: url("../images/defence.jpg");
-}
-.gif--laugh {
-  background-image: url("../images/laugh.gif");
-}
-.gif--permission {
-  background-image: url("../images/permission.gif");
-}
-.gif--sorry {
-  background-image: url("../images/sorry.gif");
-}
-.gif--soft {
-  background-image: url("../images/soft.gif");
-}
-.gif--food {
-  background-image: url("../images/food.gif");
-}
-.gif--posture {
-  background-image: url("../images/posture.jpg");
-}
-.gif--e1 {
-  background-image: url("../images/e1.jpg");
-}
-.gif--e2 {
-  background-image: url("../images/e2.jpg");
-}
-.gif--e3 {
-  background-image: url("../images/e3.jpg");
-}
-.gif--e4 {
-  background-image: url("../images/e4.jpg");
-}
-.gif--anger {
-  background-image: url("../images/gif/angry-amy.gif");
-}
-.gif--gulp-is-awesome {
-  background-image: url("../images/gif/anchorman.gif");
-}
-.gif--future {
-  background-image: url("../images/gif/future.gif");
+.gif--10 {
+  background-image: url("../images/10.gif");
 }
