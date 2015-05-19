@@ -27,7 +27,7 @@ var startInterval = function() {
 }
 
 
-if(window.location.hash != '#1') {
+if(window.location.hash != '#1' && window.location.hash != '') {
   startInterval();
 }
 
