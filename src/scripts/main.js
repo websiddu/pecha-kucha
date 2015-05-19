@@ -1,4 +1,4 @@
-bespoke.from('article', {
+var deck = bespoke.from('article', {
   keys: true,
   touch: true,
   bullets: 'li, .bullet',
@@ -8,23 +8,48 @@ bespoke.from('article', {
   state: true
 });
 
-(function preloadBackgroundImages() {
 
-  var matches, image,
-    forEach = function(arrayLike, fn) {
-      [].slice.call(arrayLike, 0).forEach(fn);
-    };
+var start = function() {
+  deck.next();
+  startInterval();
+}
 
-  forEach(document.styleSheets, function(sheet) {
-    forEach(sheet.rules, function(rule) {
-      if (rule.style && rule.style.backgroundImage) {
-        matches = rule.style.backgroundImage.match(/url\((.*)\)/);
-        if (matches) {
-          image = new Image();
-          image.src = matches[1];
-        }
-      }
-    });
-  });
+var startInterval = function() {
 
-}());
+  setInterval(function(){
+    deck.next();
+    document.getElementById('timer').innerHTML = 0;
+  }, 1000 * 20)
+
+  var counter = setInterval(function(){
+    document.getElementById('timer').innerHTML = parseInt(document.getElementById('timer').innerHTML) + 1
+  }, 1000)
+}
+
+
+if(window.location.hash != '#1' && window.location.hash != '') {
+  startInterval();
+}
+
+
+
+// (function preloadBackgroundImages() {
+
+//   var matches, image,
+//     forEach = function(arrayLike, fn) {
+//       [].slice.call(arrayLike, 0).forEach(fn);
+//     };
+
+//   forEach(document.styleSheets, function(sheet) {
+//     forEach(sheet.rules, function(rule) {
+//       if (rule.style && rule.style.backgroundImage) {
+//         matches = rule.style.backgroundImage.match(/url\((.*)\)/);
+//         if (matches) {
+//           image = new Image();
+//           image.src = matches[1];
+//         }
+//       }
+//     });
+//   });
+
+// }());
